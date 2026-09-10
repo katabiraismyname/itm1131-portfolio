@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+/* Navigation using Flexbox */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Gallery using CSS Grid */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/* Gallery items */
+.gallery-item {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+/* Gallery images */
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+/* Responsive layout */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
