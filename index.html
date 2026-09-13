@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>katabira solomon profile</title>
 <link rel="stylesheet" href="styles.css">
-<nav>
 </head>
 <body>
  <header>
     <h1>Katabira Solomon profile</h1>
     <p>Welcome to my personal profile page</p>
- </header> 
+
+ <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#interests">My Interests</a>
+        <a href="#links">Useful Links</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header> 
  <main>
     <section id="about" class="card">
         <h2>About Me</h2>
@@ -20,7 +27,7 @@
         
         </P>
     </section>
-    <section class="card">
+    <section id="interests" class="card">
         <h2>My Interests</h2>
         <p>
             I am very much interested in computer programing , web development and also learning how technology can be used to solve everyday problems in the society.
@@ -53,17 +60,31 @@
     </tbody>
 </table>
     </section>
-<section>
+<section class="gallery">
     <h2>My Learning Images</h2>
 
-    <img src="images/programing.jpg.jpeg" alt="A computer screen displaying programming code" width="300" height="200">
+    <div class="gallery-container">
 
-    <img src="images/web-development.jpg.jpg" alt="A person working on a web development project" width="300">
+        <div class="gallery-item">
+            <img src="images/programing.jpg.jpeg" alt="A computer screen displaying programming code">
+            <p>A computer screen displaying programming code.</p>
+        </div>
 
+        <div class="gallery-item">
+            <img src="images/web-development.jpg.jpg" alt="A person working on a web development project">
+            <p>A person working on a web development project.</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/programing.jpg.jpeg" alt="Programming and web development">
+            <p>Learning programming and web development.</p>
+        </div>
+
+    </div>
 </section>
 <section id="links">
     <h2>My Useful Links</h2>
-
+ 
     <p>
         <a href="#about">Go to my About Me section</a>
     </p>
@@ -72,8 +93,8 @@
         <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools</a>
     </p>
 </section>
+<section id="contact">
 <h2>Contact Me</h2>
-
 <form >
     <div>
     <label for="name">Name:</label>
@@ -89,10 +110,11 @@
     </div>
     <input type="submit" value="Send Message">
 </form>
+</section>
  </main>  
  <footer>
     <p>&copy; 2026 Katabira Solomon</p>
 
  </footer>
 </body>
-</html>
+</html>  
