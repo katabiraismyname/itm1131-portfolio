@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 12</title>
+</head>
+<body>
+    <button id="menuButton">Menu</button>
+
+<nav id="navigationMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+<form id="contactForm">
+    <label for="message">Your message:</label>
+
+    <textarea id="message" name="message"></textarea>
+
+    <p>Characters: <span id="characterCount">0</span></p>
+
+    <button type="submit">Send Message</button>
+</form>
+
+<style>#navigationMenu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#navigationMenu.open {
+    display: flex;
+    #message {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+}</style>
+
+<script>
+    const menuButton = document.getElementById("menuButton");
+    const navigationMenu = document.getElementById("navigationMenu");
+
+    menuButton.addEventListener("click", function () {
+        navigationMenu.classList.toggle("open");
+    });
+    const messageField = document.getElementById("message");
+const characterCount = document.getElementById("characterCount");
+
+messageField.addEventListener("input", function () {
+    characterCount.textContent = messageField.value.length;
+});
+</script>
+</body>
+</html>
