@@ -22,3 +22,4 @@ let now = new Date();
 let hour = now.getHours();
 console.log(timeGreeting(hour, "Alice")); // "Good morning, Alice!"
 console.log(timeGreeting(hour, "Bob")); // "Good afternoon, Bob!"
+
